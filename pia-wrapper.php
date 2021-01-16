@@ -1,7 +1,15 @@
 #!/usr/bin/php
 
 <?php
+
+//SETUP:
+//Cron:
 //  */5 * * * *     root    /home/jesse/scripts/pia.php > /dev/null 2>&1
+//
+//Create:
+///home/jesse/scripts/p4500711.cfg
+//username / passwword on one line
+
 
 function piactl_background() {
         shell_exec("/usr/local/bin/piactl background enable");
